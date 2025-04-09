@@ -2,7 +2,7 @@ name: Test-Workflow
 
 on:
   schedule:
-    - cron: "0 16 * * *"  # 8:30 pm IST (3:00 pm [15:00] UTC)
+    - cron: "27 16 * * *"  # 4:27 pm [16:27] UTC
 
 jobs:
   build:
