@@ -1,8 +1,9 @@
 name: Test-Workflow
 
 on:
-  schedule:
-    - cron: "15 17 * * *" # UTC timezone
+  push:
+    branches:
+      - main
 
 jobs:
   build:
