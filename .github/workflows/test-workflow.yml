@@ -2,7 +2,7 @@ name: Test-Workflow
 
 on:
   schedule:
-    - cron: "50 16 * * *"
+    - cron: "0 17 * * *" # UTC timezone
 
 jobs:
   build:
@@ -11,8 +11,6 @@ jobs:
     permissions: read-all
     steps:
       - uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
       - name: Run code
         run: |
           echo "Hello Workflow!"
